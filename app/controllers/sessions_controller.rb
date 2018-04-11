@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session.destroy :name
+    session.delete :name
     redirect_to logout_path
   end
 end
