@@ -10,6 +10,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session.destroy :name
-    redirect_to login_path
+    redirect_to logout_path
   end
 end
